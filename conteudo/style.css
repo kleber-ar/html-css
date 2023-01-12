@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+/*PSEUDO CLASSES E PSEUDO ELEMENTOS*/
+
+
+.d, #d2{
+
+    display:inline-block ;
+    text-align: center;
+    background-color: gray;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+
+}
+
+#d2:hover{
+    
+    background-color: green;
+ 
+}
+
+
+#d2  p {
+
+    display: none;
+    background-color: rebeccapurple;
+    text-decoration: white;
+
+}
+
+.d:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+#d2:hover  p{
+
+    display: block;
+    
+}
+
+#pseudo a {
+
+    color: darkred;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+#pseudo a:hover{
+
+    text-decoration: line-through;
+}
+
+#pseudo a:active{
+
+    color: black;
+
+}
+
+#pseudo a:visited{
+
+    color: darkgreen;
+}
+
+#pseudo a::before{
+
+    content: '➟ ';
+
+}
+
+#pseudo a::after{
+
+    content: ' ⚓';
+
+}
+
+
+
+
+
+
+
+
