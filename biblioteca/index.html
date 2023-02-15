@@ -114,12 +114,40 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quasi perferendi
     <h1>Listas</h1>
     <details>
         <h2>Ordenadas</h2>
-        <ol type="1" start="0"> <!--Os type são:1,A,a,I,. O start serve para determinar em que ordem irá começar.i-->
+        <ol type="1" start="0"> <!--Os type são:1,A,a,I,i,. O start serve para determinar em que ordem irá começar.i-->
             <li>Lorem, ipsum.</li>
             <li>Placeat, in!</li>
             <li>Minima, dolorum!</li>
             <li>Rerum, eaque!</li>
             <li>Accusantium, eius.</li>
+        </ol>
+        <ol type="A">
+            <li>Lorem.</li>
+            <li>Ea.</li>
+            <li>Soluta.</li>
+            <li>Aspernatur!</li>
+            <li>Iusto.</li>
+        </ol>
+        <ol type="a">
+            <li>Lorem.</li>
+            <li>Eos.</li>
+            <li>Sunt.</li>
+            <li>Placeat.</li>
+            <li>Est.</li>
+        </ol>
+        <ol type="I">
+            <li>Lorem.</li>
+            <li>Reiciendis.</li>
+            <li>Quod.</li>
+            <li>Dolorem?</li>
+            <li>Suscipit.</li>
+        </ol>
+        <ol type="i">
+            <li>Lorem.</li>
+            <li>Reiciendis.</li>
+            <li>Quod.</li>
+            <li>Dolorem?</li>
+            <li>Suscipit.</li>
         </ol>
         <h2>Não ordenadas</h2>
         <ul><!--Os type são: disc,circle,square.-->
@@ -129,11 +157,33 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quasi perferendi
             <li>Perspiciatis, eligendi.</li>
             <li>Aperiam, natus?</li>
         </ul>
+        <ul type="circle">
+            <li>Lorem.</li>
+            <li>Labore.</li>
+            <li>Minus?</li>
+            <li>Accusantium?</li>
+            <li>Praesentium!</li>
+        </ul>
+        <ul type="square">
+            <li>Lorem.</li>
+            <li>Eius!</li>
+            <li>Numquam!</li>
+            <li>Ab.</li>
+            <li>Nostrum.</li>
+        </ul>
         <h2>Junção de lista</h2>
         <ol>
             <li>
                 Lorem, ipsum.
                 <ol type="a">
+                    <li>Lorem.</li>
+                    <li>Vero.</li>
+                    <li>Dicta.</li>
+                </ol>
+            </li>
+            <li>
+                Lorem, ipsum.
+                <ol type="I">
                     <li>Lorem.</li>
                     <li>Vero.</li>
                     <li>Dicta.</li>
@@ -322,13 +372,17 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quasi perferendi
 
     <h1>Iframes</h1>
     <details>
-        <h2>Uso de ifrmaes</h2>
+        <h2>Uso de Iframaes</h2>
 
         <ul>
-            <li><a href="projetos/" target="frame">Cordel moderno</a></li>
-            <li><a href="" target="frame">Sobre o android</a></li>
+            <li><a href="/projetos/cordel-moderno-(paralax)" target="frame">Cordel moderno</a></li>
+            <li><a href="/Projetos/sobre-o-android/index.html" target="frame">Sobre o android</a></li>
         </ul>
-        <iframe id="frame" name="frame" src="" frameborder="1"></iframe>
+        <iframe 
+        id="frame" name="frame" srcdoc="<img src='imagens\imagens-e-gifs-de-loading-44.gif' alt='Loading' width='400px' height='450px'>" frameborder="0" sandbox="sadbox" referrerpolicy="no-referrer">
+        <!--"sandbox" é referente a interaçoes dentro do frame. "referrerpolicy" é referente a anuncios ou o bot do google.-->
+        </iframe>
+    
 
     </details>
 
