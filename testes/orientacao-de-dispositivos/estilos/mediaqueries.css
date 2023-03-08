@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 @media screen and (orientation: landscape){
+    /* Orientação em paisagem (landscape) no modo retrato é só mudar o "landscape" para "portrait" */
 
     body {
 
