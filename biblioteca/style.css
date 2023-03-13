@@ -174,6 +174,47 @@ td {
     height: 500px;
 }
 
+/*-----------------------------------------*/
+
+/*Animação*/
+
+@keyframes anime {
+
+    0% {background-color: red; top: 0; left: 90%;}
+    25% {background-color: yellow; top: 0; left: 0%;}
+    50% {background-color: blue; top: 0; left: 0%;}
+    75% {background-color: green; top: 0; left: 0%;}
+    100% {background-color: red; top: 0; left: 90%;}
+    
+}
+
+div .area-anime {
+    display: block;
+    height: 80px;
+    width: 90vw;
+
+
+
+}
+
+div .anime {
+
+    position: relative;
+    margin: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: red;
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-delay:1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+
+}
+/*-----------------------------------------*/
+
 
 
 
