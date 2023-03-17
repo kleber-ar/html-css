@@ -176,7 +176,7 @@ td {
 
 /*-----------------------------------------*/
 
-/*Animação*/
+/*Animação e transiçoes*/
 
 @keyframes anime {
 
@@ -205,6 +205,20 @@ div .anime {
     animation-direction: alternate;
     animation-timing-function: ease-out;
 
+}
+
+#trans {
+    
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: all 200ms linear;
+}
+
+#trans:hover {
+
+    border-radius: 50%;
+    background-color: blue;
 }
 /*-----------------------------------------*/
 
