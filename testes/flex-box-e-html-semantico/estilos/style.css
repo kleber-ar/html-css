@@ -46,9 +46,26 @@ header {
 .menu {
 
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     font-size: 15px;
     
+}
+
+.menuMobile {
+
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.mmline {
+
+    height: 3px;
+    border-radius: 5px;
+    background-color: #31aae1;
+
+        
 }
 
 nav ul {
@@ -80,6 +97,8 @@ nav a:hover {
     display: flex;
     justify-content: center;
     background-image: url(../imagens/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     height: 670px;
 
@@ -145,7 +164,6 @@ nav a:hover {
 
 .option3 {
 
-    flex: 1;
     padding: 20px;
     background-color: #2b4c99;
 
