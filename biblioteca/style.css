@@ -222,6 +222,40 @@ div .anime {
 }
 /*-----------------------------------------*/
 
+/*Seletores CSS*/
+
+.seletore, [name=usuario] {
+
+    background-color: grey;
+
+}
+
+.seletores [required] {
+
+    background-color: lightgray;
+
+}
+
+.seletores a[href^="https:"] {
+
+    background-color: rgb(206, 188, 188);
+
+}
+
+.seletores a[href$="a"] {
+
+    background-color: gray;
+
+}
+
+.seletores a[href*="tia"] {
+
+    background-color: rgb(235, 68, 235);
+
+}
+
+
+
 
 
 
