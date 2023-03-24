@@ -224,7 +224,8 @@ div .anime {
 
 /*Seletores CSS*/
 
-.seletore, [name=usuario] {
+/* Por atributo*/
+.seletores [name=usuario] {
 
     background-color: grey;
 
@@ -235,6 +236,9 @@ div .anime {
     background-color: lightgray;
 
 }
+/*------------------*/
+
+/*Por texto dentro da TAG*/
 
 .seletores a[href^="https:"] {
 
@@ -253,6 +257,197 @@ div .anime {
     background-color: rgb(235, 68, 235);
 
 }
+
+/*---------------------*/
+
+/*TAG vazia*/
+
+div:empty {
+    
+    height: 14px;
+    width: 45px;
+    background-color:black;
+
+}
+
+/*---------------*/
+
+/*Seleção de primeira letra e linha de um para grafo*/
+
+ .letra  p::first-letter {
+
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.linha p::first-line {
+
+    background-color: yellow;
+
+}
+
+/*-----------------*/
+
+/* Seleção de primeiro e ultimo elemento*/
+
+.elemento div {
+
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+
+}
+
+.elemento div:first-child {
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: blueviolet;
+
+}
+
+.elemento div:last-child {
+
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: blueviolet;
+
+}
+
+/*--------------------*/
+
+/*Seleção negativa*/
+
+.negativo :not(p) {
+
+    background-color: lightslategray;
+
+}
+
+/*----------------*/
+
+/*Seleção por ordem NTH*/
+
+.nth :nth-child(2) {
+
+    background-color: lightgray;
+
+}
+
+.nth :nth-last-child(2) {
+
+    background-color: lightgray;
+
+}
+
+/*------------------*/
+
+/*Seletor before/after*/
+
+.ba div::before {
+
+    content: ">";
+    background-color: lightgray;
+
+}
+
+.ba div::after {
+
+    content: "";
+    display: inline-block;
+    background-color: lightgray;
+    height: 10px;
+    width: 10px;
+    
+}
+
+.balao {
+
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: lightslategray;
+    border-radius: 20px;
+
+}
+
+.balao::after {
+
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+
+    border:20px solid;
+    border-color: lightslategray transparent transparent transparent;
+
+}
+
+/*-------------------*/
+
+/* Transparencia RGBA */
+
+div.transparencia {
+
+    height: 100px;
+    width: 100px;
+    background-color: rgba(0,0,0,0.2);
+
+}
+
+/*----------------*/
+
+/*Seletor transform */
+
+div.form1 {
+
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    transform: scale(0.5);
+
+}
+
+div.form2 {
+
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    transform: rotate(45deg);
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+
+div.form3 {
+
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    transform: skew(10deg, 10deg);
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+/*------------------------*/
+
+/*Estilo do placeholder*/
+
+.holder::placeholder {
+
+    color: red;
+    background-color: rgba(0, 0, 255, 0.419);
+
+}
+
+/*-----------------*/
+
+
+
 
 
 

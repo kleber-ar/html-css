@@ -666,30 +666,97 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro quasi perferendi
     </details>
     <hr>
 
-    <div class="seletores">
 
-        <h1>Seletores CSS</h1>
-        <details>
+    <h1>Seletores CSS</h1>
+    <details class="seletores">
 
-            <h2>Seleção por atributo</h2>
+        <h2>Seleção por atributo</h2>
 
-            <input type="text" name="usuario">
-            <input type="password" name="senha" required>
+        <input type="text" name="usuario">
+        <input type="password" name="senha" required>
 
-            <h2>Seleção por texto dentro da TAG</h2>
+        <h2>Seleção por texto dentro da TAG</h2>
 
-            <p>Pelo inicio do texto</p>
-            <a href="https://www.google.com/">Google</a>
+        <p>Pelo inicio do texto</p>
+        <a href="https://www.google.com/">Google</a>
 
-            <p>Pelo fim do texto</p>
-            <a href="https://www.google.com/a">Google</a>
+        <p>Pelo fim do texto</p>
+        <a href="https://www.google.com/a">Google</a>
 
-            <p>Por um texto específico</p>
-            <a href="https://www.tia.com/">Google</a>
+        <p>Por um texto específico</p>
+        <a href="https://www.tia.com/">Google</a>
 
-        </details>
+        <h2>Seleção de elementos vazio</h2>
 
-    </div>
+        
+        <di>Texto1</div>
+        <div></div>
+        <div>Texto3</div>
+        
+
+        <h2>Seleção de primeira letra e linha de um paragrafo</h2>
+
+        <div class="letra">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium soluta quibusdam ea sapiente fugit veniam ducimus error nesciunt, veritatis in ratione, aut reiciendis laudantium, nihil maiores ipsum autem. Laudantium, necessitatibus.</p>
+        </div>
+
+        <div class="linha">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum ex impedit nostrum cupiditate enim culpa quibusdam officia placeat reiciendis inventore praesentium odio, iure id deleniti aut temporibus accusantium magni cumque?</p>
+        </div>
+
+        <h2>Seleção de primeiro e ultimo elemento</h2>
+
+        <div class="elemento">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <h2>Seleção negativa</h2>
+
+        <div class="negativo">
+            <div>exemplo</div>
+            <p>exemplo</p>
+            <a href="">exemplo</a>
+        </div>
+
+        <h2>Seleção por ordem de elemento NTH</h2>
+        <div class="nth">
+            <div>Exemplo 1</div>
+            <div>Exemplo 2</div>
+            <div>Exemplo 3</div>
+            <div>Exemplo 4</div>
+            <div>Exemplo 5</div>
+        </div>
+
+        <h2>Seletor before/after</h2>
+        <div class="ba">
+            <div>exemplo</div>
+        </div>
+
+        <div class="balao">bla bla bla bla bla</div>
+
+        <h2>Transparencia RGBA</h2>
+        <div class="transparencia"></div>
+
+        <h2>Seletor Transform</h2>
+        <p>Transform scale</p>
+        <div class="form1"></div>
+
+        <p>Transform rotate</p>
+        <div class="form2"></div>
+
+        <p>Transform skew</p>
+        <div class="form3"></div>
+
+        <h2>Estilisação do placeholder</h2>
+
+        <input class="holder" type="text" name="nome" placeholder="Nome aqui">
+
+    </details>
+    
+
+    
 
 </body>
 </html>
