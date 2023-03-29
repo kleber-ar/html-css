@@ -9,6 +9,12 @@
     
 }
 
+body {
+
+    overflow-x: hidden;
+
+}
+
 header {
 
     height: 100px;
@@ -123,9 +129,8 @@ header {
 
 }
 
-.banner a {
+.button {
 
-    display: block;
     background-color: #b28756;
     padding: 10px 40px;
     margin-top: 20px;
@@ -136,6 +141,99 @@ header {
     font-weight: 600;
 
 }
+
+.banner .seletores {
+
+    display: flex;
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -120px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner .seletor {
+
+    height: 15px;
+    width: 15px;
+    border: 2px solid #b28756;
+    border-radius: 50%;
+    margin: 0px 5px;
+
+}
+
+.banner .seletor:hover{
+
+    background-color: #b28756;
+    cursor: pointer;
+
+}
+
+.default {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1140px;
+    margin: auto;
+    padding: 50px 0px;
+
+}
+
+.default h1 {
+
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.default h2 {
+
+    text-transform: uppercase;
+    font-size: 12px;
+    margin: 10px 0px;
+    color: #ccc;
+
+}
+
+.default.dark  {
+
+    background-color: black;
+
+}
+
+.default.dark h1 {
+
+    color: #fff;
+
+}
+
+.content {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0px;
+
+}
+
+.about-right p {
+
+    line-height: 25px;
+
+}
+
+.about-left img {
+
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.51);
+}
+    
+
+
+
+
+
 
 
 
