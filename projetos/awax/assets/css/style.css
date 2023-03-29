@@ -5,5 +5,139 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
     
 }
+
+header {
+
+    height: 100px;
+    background-color: black;
+
+}
+
+.header {
+
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.logo {
+
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background-color: #b28756;
+    border-radius: 50%;
+
+}
+
+
+.menu ul, li{
+
+    display: flex;
+    list-style: none;
+
+}
+
+.menu li a {
+
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0px 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid black;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.menu li a:hover {
+    
+    border-bottom:5px solid #b28756;
+    color: #b28756;
+
+}
+
+.banner {
+
+    height: calc(100vh - 100px);
+    background-image: url(../imagens/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+
+
+}
+
+.banner .sliders {
+
+    display: flex;
+    width: 1000vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+
+}
+
+.banner .slide {
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner h1 {
+
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+
+}
+
+.banner h1 span {
+
+    color: #b28756;
+
+}
+
+.banner h2 {
+
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0px;
+    text-transform: uppercase;
+
+}
+
+.banner a {
+
+    display: block;
+    background-color: #b28756;
+    padding: 10px 40px;
+    margin-top: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+
+
+
+
