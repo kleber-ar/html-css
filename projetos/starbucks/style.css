@@ -117,3 +117,153 @@ h1 {
     border: 6px solid #117050;
 
 }
+
+.grid {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.barra {
+
+    height: 22px;
+    width: 170px;
+    background-color: #117050;
+}
+
+.content {
+
+    padding: 80px;
+
+}
+
+h2 {
+
+    font-family: 'oswald', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.content p {
+
+    margin: 30px 0px;
+
+}
+
+.content2 p {
+
+    margin: 30px 0px;
+
+}
+
+a {
+
+    display:inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: 2px solid #454545;
+    color: #454545;
+
+}
+
+a:hover {
+
+    border: 2px solid #454545;
+    color:white;
+    background-color: #454545;
+    
+}
+
+.img1 {
+
+    background-image: url(imagens/f1.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 2 / 3;
+    grid-row: 1  /  3;
+
+}
+
+.img2 {
+
+    background-image: url(imagens/f2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+
+}
+
+
+.img3 {
+
+    background-image: url(imagens/f3.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / 2;
+    grid-row: 1  /  3;
+
+}
+
+.img4 {
+
+    background-image: url(imagens/f4.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+
+}
+
+.content2 {
+
+    padding: 200px 80px;
+    background-image: url(imagens/bg2.jpg);
+    background-position: left;
+    background-size: cover;
+
+}
+
+.img5 {
+
+    background-image: url(imagens/f5.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.grid2 {
+
+    display: grid;
+    grid-template-columns: 450px  1fr;
+    background-color: #E8E9EE;
+
+}
+
+.img6 {
+
+    background-image: url(imagens/bg3.jpg);
+    background-position: left;
+
+}
+
+.banner2 {
+
+    background-image: url(imagens/bg4.jpg);
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+footer {
+
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #454545;
+    color: white;
+}
+
