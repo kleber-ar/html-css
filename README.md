@@ -1,5 +1,5 @@
-# html-css
- Estudo de html-css
+# html-css-js
+ Estudo de html-css-js
 
 Alguns exercicios e projetos para pratica e estudos.
 
