@@ -16,18 +16,46 @@ for (let index = 0; index < numbers.length; index++) {
 
 console.log(mult);
 
+console.log('---------------');
+
 /*Escreva um algoritmo que, dado um valor n positivo, ou seja, n > 1, imprima na tela um quadrado feito de asteriscos de tamanho n. Por exemplo:*/
 
 let n = 5;
 let simb = '*';
 let inputLine = '';
+let inputPosition = n - 1;
+
+for (let indexLine = 0; indexLine < n; indexLine++) {
+    for (let indexColumn = 0; indexColumn < n; indexColumn++) {
+        if (indexColumn < inputPosition) {
+            inputLine = inputLine + ' ';
+        }else {
+            inputLine = inputLine + simb;
+        }
+                
+    }
+
+    console.log(inputLine);
+    inputLine = '';
+    inputPosition -= 1;
+
+}
+
+console.log('----------');
+
 
 for (let index = 0; index < n; index++) {
     inputLine += simb;
+    console.log(inputLine);
+
 }
+
+console.log('-----------');
 
 for (let index = 0; index < n; index++) {
     console.log(inputLine);
+
 }
+
 
 
