@@ -8,7 +8,7 @@ console.log(whereAreYou);
 
 const parent = whereAreYou.parentElement;
 
-parent.style.color= 'red';
+parent.style.color = 'red';
 
 // Acesse o first-child-of-child e adicione um texto a ele.
 // Você se lembra dos vídeos da aula anterior? Eles ensinam como fazer isso.
