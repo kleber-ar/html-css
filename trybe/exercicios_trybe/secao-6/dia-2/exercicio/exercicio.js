@@ -1,3 +1,4 @@
+
 //EXERCICIO-1
 
 // removeItem.js
@@ -11,4 +12,6 @@ function removeItem(arr, item) {
     }
     return newArr;
   }
+  console.log(removeItem([1, 2, 3, 4], 2));
   
+  module.exports = removeItem;
