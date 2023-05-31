@@ -1,5 +1,8 @@
 
-const removeItem = require("./exercicio")
+const { default: expect } = require('expect');
+const removeItem = require('./exercicio');
+
+const myFizzBuzz = require('./exercicio');
 
 describe('testa a função removeItem', () => {
     it('retorna array removendo o item correto', () => {
@@ -9,3 +12,13 @@ describe('testa a função removeItem', () => {
         
     });
 });
+
+describe('testa a função fizzBuzz', () => {
+  it('Retorna valor esperado', () => {
+    expect(myFizzBuzz(15)).toBe('fizzbuzz');
+    expect(myFizzBuzz(3)).toBe('fizz');
+    expect(myFizzBuzz(5)).toBe('buzz');
+    expect(myFizzBuzz(1)).toBe('1');
+    expect(myFizzBuzz("15")).toBeFalsy();
+  })
+})
