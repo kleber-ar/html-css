@@ -114,6 +114,7 @@ const clients = [
         return `${receiverName} \n${fulladdress} \n${cep}`;
     } catch (error) {
         return error.message;
+        
     }
   };
 
