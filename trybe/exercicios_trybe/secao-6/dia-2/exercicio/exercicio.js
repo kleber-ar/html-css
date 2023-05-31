@@ -30,6 +30,4 @@ function myFizzBuzz(num) {
 }
   console.log(myFizzBuzz(15));
   
-  module.exports = 
-        removeItem,
-        myFizzBuzz;
+  module.exports = removeItem, myFizzBuzz;
