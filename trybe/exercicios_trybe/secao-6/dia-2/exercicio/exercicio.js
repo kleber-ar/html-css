@@ -1,6 +1,8 @@
 
 //EXERCICIO-1
 
+const { array } = require("yargs");
+
 // removeItem.js
 
 function removeItem(arr, item) {
@@ -80,28 +82,62 @@ console.log(encode('boa 02'), decode('b41 02'));
 
 //EXERCICIO-4
 
-// techlist.js
+// techList.js
 
-const techList = (arrayTechnologies, name) => {
-  if (arrayTechnologies.length === 0) return 'Vazio!';
+const techList = (arraytech, name) => {
+  if (!arraytech.length) return ('Vazio!');
 
-  const sortedArray = arrayTechnologies.sort();
-  const technologyList = [];
+  const sortTech = arraytech.sort();
+  const techList = [];
 
-  for (let index = 0; index < sortedArray.length; index += 1) {
-    technologyList.push({
-      tech: sortedArray[index],
-      name,
+  for (let index = 0; index < sortTech.length; index++) {
+    techList.push({
+      tech: sortTech[index],
+      name: name,
     });
+    
   }
 
-  return technologyList;
-};
+  return techList;
 
-console.log(techList('css, lucas'));
+}
+
+console.log(techList(['css', 'java'], 'lucas'));
+
+//EXERCICIO-5
+
+// hidrate.js
+
+const hydrate = (string) => {
+  const splitString = string.split(' ');
+  let glassesOfWater = 0;
+
+  for (let index = 0; index < splitString.length; index++) {
+    const parsedCharacter = parseInt(splitString[index]);
+
+    if (parsedCharacter) {
+      glassesOfWater += parsedCharacter;
+    }
+    
+  }
+
+  let glass = 'copo';
+
+  if (glassesOfWater > 1) {
+    glass = 'copos';
+
+  }
+
+  return `${glassesOfWater} ${glass} de água`;
+}
+
+console.log(hydrate('12 cervejas, 3 caipirinha'));
 
 module.exports = {
   removeItem, 
   myFizzBuzz,
   encode, decode,
+  techList,
+  hydrate
+
 };
