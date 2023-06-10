@@ -1,4 +1,3 @@
-
 //Utilize o find para retornar o primeiro número do array que é divisível por 3 e 5, caso ele exista
 
 // Adicione seu código aqui
@@ -6,7 +5,7 @@
 const numbers = [19, 21, 30, 3, 45, 22, 15];
 
 const verifyNumbers = numbers.find((number) => {
-    return number % 3 === 0 && number % 5 === 0
+  return number % 3 === 0 && number % 5 === 0;
 });
 
 console.log(verifyNumbers);
@@ -15,7 +14,7 @@ console.log(verifyNumbers);
 
 // Adicione seu código aqui
 
-const names = ['João', 'Irene', 'Fernando', 'Maria'];
+const names = ["João", "Irene", "Fernando", "Maria"];
 
 const nameLetters = names.find((name) => name.length === 5);
 
@@ -28,12 +27,11 @@ console.log(nameLetters);
 // Adicione seu código aqui
 
 const musicas = [
-    { id: '31031685', title: 'Partita in C moll BWV 997' },
-    { id: '31031686', title: 'Toccata and Fugue, BWV 565' },
-    { id: '31031687', title: 'Chaconne, Partita No. 2 BWV 1004' },
-  ];
+  { id: "31031685", title: "Partita in C moll BWV 997" },
+  { id: "31031686", title: "Toccata and Fugue, BWV 565" },
+  { id: "31031687", title: "Chaconne, Partita No. 2 BWV 1004" },
+];
 
-const findMusic = musicas.find((musica) => musica.id === '31031685');
+const findMusic = musicas.find((musica) => musica.id === "31031685");
 
 console.log(findMusic);
-  
