@@ -29,56 +29,48 @@ let parN = [];
 // soma,média e quantidade de dados dentro do array
 
 for (let index = 0; index < numbers.length; index++) {
-    soma += numbers[index];
-    media = soma / numbers.length;
-    
+  soma += numbers[index];
+  media = soma / numbers.length;
 
-//--------------
+  //--------------
 
-// O maior e menor numero dentro do array
+  // O maior e menor numero dentro do array
 
+  if (numbers[index] > maiorN) {
+    maiorN = numbers[index];
+  } else if (numbers[index] < menorN) {
+    menorN = numbers[index];
+  }
 
+  //--------------
 
+  // Quantidade de par e impares.
 
-    if ( numbers[index] > maiorN ) {
-        maiorN = numbers[index];
-
-    } else if (numbers[index] < menorN ){
-        menorN = numbers[index];
-    }
-
-//--------------
-
-// Quantidade de par e impares.
-
-
-    if (numbers[index] % 2 !== 0){
-        impar += 1;
-        imparN.push(index);
-
-    }else if (numbers[index] % 2 === 0){
-        par += 1;
-        parN.push(index);
-        
-    }
-//---------------
+  if (numbers[index] % 2 !== 0) {
+    impar += 1;
+    imparN.push(index);
+  } else if (numbers[index] % 2 === 0) {
+    par += 1;
+    parN.push(index);
+  }
+  //---------------
 }
 
 console.log(numbers);
-console.log('Numeros pares:',par);
+console.log("Numeros pares:", par);
 console.log(parN);
-console.log('Numeros impares:',impar);
+console.log("Numeros impares:", impar);
 console.log(imparN);
-console.log('Menor numero:',menorN);
-console.log('Maior numero:',maiorN);
-console.log('Quantidade de dados:',numbers.length);
-console.log('Soma dos dados:',soma);
-console.log('Média:',media);
+console.log("Menor numero:", menorN);
+console.log("Maior numero:", maiorN);
+console.log("Quantidade de dados:", numbers.length);
+console.log("Soma dos dados:", soma);
+console.log("Média:", media);
 
-if (media > 20){
-    console.log('Média é maior do que 20.');
+if (media > 20) {
+  console.log("Média é maior do que 20.");
 } else {
-    console.log('Média é menor ou igual do que 20.');
+  console.log("Média é menor ou igual do que 20.");
 }
 
 //Acrescentando com for e push mais 25 numeros
@@ -87,8 +79,7 @@ let novos = [];
 let novosD = [];
 
 for (let index = 1; index <= 25; index++) {
-    novos.push(index);
-
+  novos.push(index);
 }
 
 console.log(novos);
@@ -97,12 +88,10 @@ console.log(novos);
 
 // dividindo cada numero por 2
 for (let index = 0; index < novos.length; index++) {
-    novosD.push(novos[index] / 2);
+  novosD.push(novos[index] / 2);
 }
 
 console.log(novosD);
-
-
 
 //--------------
 
@@ -110,10 +99,8 @@ console.log(novosD);
 
 let fatora = 1;
 
-for (let index = 10; index > 0; index--){
-    fatora *= index;
-
-
+for (let index = 10; index > 0; index--) {
+  fatora *= index;
 }
 
 console.log(fatora);
@@ -122,12 +109,11 @@ console.log(fatora);
 
 //forma de inverter palavras
 
-let word = 'Socorram-me, Subi No Ônibus Em Marrocos.';
-let reverse = '';
+let word = "Socorram-me, Subi No Ônibus Em Marrocos.";
+let reverse = "";
 
 for (let index = 0; index < word.length; index++) {
-    reverse += word[word.length - 1 - index];
-
+  reverse += word[word.length - 1 - index];
 }
 
 console.log(reverse);
@@ -136,7 +122,7 @@ console.log(reverse);
 
 // segungo jeito de reverter com manipulaão de string
 
-reverse = word.split('').reverse().join('');
+reverse = word.split("").reverse().join("");
 
 console.log(reverse);
 
@@ -144,23 +130,21 @@ console.log(reverse);
 
 // Contagem da maior e menor palavra dentro de um array
 
-let array = ['java', 'javascript', 'python', 'html', 'css'];
+let array = ["java", "javascript", "python", "html", "css"];
 
 let maiorP = array[0];
 let menorP = array[0];
 
 for (let index = 1; index < array.length; index++) {
-    if (array[index].length >  maiorP.length){
-        maiorP = array[index];
-
-    } else if (array[index].length < menorP.length){
-        menorP = array[index]
-    }
-
+  if (array[index].length > maiorP.length) {
+    maiorP = array[index];
+  } else if (array[index].length < menorP.length) {
+    menorP = array[index];
+  }
 }
 console.log(array);
-console.log('A menor palavra:',menorP);
-console.log('A meior palavra:',maiorP);
+console.log("A menor palavra:", menorP);
+console.log("A meior palavra:", maiorP);
 
 //---------------------
 
@@ -169,19 +153,17 @@ console.log('A meior palavra:',maiorP);
 let maiorPrimo = 0;
 
 for (let index = 50; index >= 2; index--) {
-    let primo = true;
+  let primo = true;
 
-    for (let divisor = 2; divisor < index; divisor++){
-        if (index % divisor === 0) {
-            primo = false;
-            
-        }
+  for (let divisor = 2; divisor < index; divisor++) {
+    if (index % divisor === 0) {
+      primo = false;
     }
+  }
 
-    if (primo) {
-
-        maiorPrimo = index;
-        break;
-    }
+  if (primo) {
+    maiorPrimo = index;
+    break;
+  }
 }
- console.log('Maior numero primo de "2"até "50":',maiorPrimo);
+console.log('Maior numero primo de "2"até "50":', maiorPrimo);
