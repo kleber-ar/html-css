@@ -4,24 +4,17 @@ const img = document.querySelector('#image');
 const name = document.querySelector('#name');
 const button = document.querySelector('#button');
 
-const BASE_URL = `https://akabab.github.io/superhero-api/api`;
-
-const MAX_HEROES = 731;
-
-const randomId = () => Math.floor(Math.random() * MAX_HEROES);
-
 button.addEventListener('click', (event) => {
   event.preventDefault();
 
-  const id = randomId();
-
-
-  fetch(`${BASE_URL}/id/${id}.json`)
+  fetch(`https://akabab.github.io/superhero-api/api/all.json`)
     .then((result) => result.json())
     .then((data) => {
-      img.src = data.images.md;
-      name.innerHTML = data.name;
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const hero = data[randomIndex];
 
+      img.src = hero.images.md;
+      name.innerHTML = hero.name;
     })
     .catch((error) => Swal.fire({
       title: 'Hero not found',
