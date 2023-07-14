@@ -1,8 +1,21 @@
-function Greeting() {
-    const fistName = 'Kleber'
-    const lastName = 'Rodrigues'
+type GreetingProps = {
+    person: {
+        fistName: string;
+        lastNmae: string;
+    };
+};
 
-    return <h1 className="greeting">Olá {`${fistName} ${lastName}`}</h1>
+function Greeting(props: GreetingProps) {
+    const { person } = props;
+
+    const fistName = person.fistName;
+    const lastName = person.lastNmae;
+
+    return (
+        <h1 className="greeting">Olá, {`${fistName} ${lastName}!`}
+        <img src="https://i.imgur.com/rqvLd3q.png" alt="img" />
+        </h1>
+    );
 }
 
 export default Greeting;
