@@ -55,4 +55,5 @@ describe('Aprendendo sobre Mocks', () => {
         
         expect(divisivelPorDois()).toBeFalsy();
     });
+    
 })
