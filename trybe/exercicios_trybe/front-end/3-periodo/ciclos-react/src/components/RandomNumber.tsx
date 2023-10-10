@@ -13,6 +13,25 @@ class RandomNumber extends React.Component<RandomNumberProps, RandomNumberState>
     randomNumber: 0,
   };
 
+  componentDidMount() {
+    const newNumber = this.generateRandomNumber();
+
+    this.setState({ randomNumber: newNumber, });
+
+    document.title = `${newNumber}`;
+  }
+  
+  componentDidUpdate() {
+    const { randomNumber } = this.state;
+
+    document.title = `${ randomNumber }`;
+  }
+  
+  componentWillUnmount() {
+
+    document.title = '?' ;
+  }
+
   generateRandomNumber = () => {
     const { max } = this.props;
     return Math.floor(Math.random() * max) + 1;
